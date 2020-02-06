@@ -1,0 +1,7 @@
+Assignment1 conclusion:
+
+I basicly create a several web pages as the examples and implement the links to connect them. I create several modals in different pages so that I have a place to provide information or receive message when I want to create/update/delete posts or elements.
+
+To implement these pages, I widely use the class in Bootstrap like container, form-group, list-group, navbar and modal. The most difficalt part is to make different view when the browser is on the computer or smartphone. At the beginning I consider to build different block for each of them and use @media to monitor the size of screen. After using Bootstrap, it can be easily solved by grid and most of the classes in Bootstrap fits the screen size.
+
+A unique part of my assignment is the modal part. Instead of linkeng the create/edit/delete icon into a new webpage, I use the modal class so there will be a dialog box to require information, files or provide message when you click the icon. 
