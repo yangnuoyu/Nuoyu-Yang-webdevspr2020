@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title></title>
+  </head>
+  <body>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item pt-5 bg-light border-bottom-0">
+        <h1> It's my birthday!</h1>
+        <p> Posted on Jan. 1st 2020 by Adam.</p>
+      </li>
+
+      <li class="list-group-item border-bottom-0 d-flex">
+        <a href="#" role="button" class ="ml-auto" data-toggle="modal" data-target="#newElement">
+          <i class="fas fa-plus-circle"></i>
+        </a>
+      </li>
+
+      <li class="list-group-item border-bottom-0 d-flex">
+        <img src="https://www.handletheheat.com/wp-content/uploads/2015/03/Best-Birthday-Cake-with-milk-chocolate-buttercream-SQUARE.jpg"
+             alt="Example" width="30%" class="img-fluid mr-auto">
+        <a href="#" class="mr-4 align-self-start" data-toggle="modal" data-target="#editElement">
+          <i class="fas fa-cogs icons"></i>
+        </a>
+        <a href="#" class="mr-4 align-self-start" data-toggle="modal" data-target="#deleteElement">
+          <i class="fas fa-trash icons"></i>
+        </a>
+      </li>
+      <li class="list-group-item border-bottom-0 d-flex .embed-responsive-item embed-responsive-4by3">
+        <iframe class="mr-auto embed-responsive-item" src="https://www.youtube.com/embed/_z-1fTlSDF0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <a href="#" class="mr-4 align-self-start" data-toggle="modal" data-target="#editElement">
+          <i class="fas fa-cogs icons"></i>
+        </a>
+        <a href="#" class="mr-4 align-self-start" data-toggle="modal" data-target="#deleteElement">
+          <i class="fas fa-trash icons"></i>
+        </a>
+      </li>
+      <li class="list-group-item border-bottom-0 d-flex">
+        <p class="mr-auto bg-light"> I am so excited that it's my birthday today!</p>
+        <a href="#" class="mr-4 align-self-start" data-toggle="modal" data-target="#editElement">
+          <i class="fas fa-cogs icons"></i>
+        </a>
+        <a href="#" class="mr-4 align-self-start" data-toggle="modal" data-target="#deleteElement">
+          <i class="fas fa-trash icons"></i>
+        </a>
+      </li>
+    </ul>
+
+
+    <!--Modal-->
+    <div class="modal fade" id="newElement" tabindex="-1" role=form aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New element</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="input"><strong>Summary:</strong></label>
+              <input type="text" class="form-control" id="input" placeholder="What you want to say:">
+              <label for="file">Upload file:</label>
+              <input type="file" class="form-control-file" id="file">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+            <a type="button" class="btn btn-primary" data-dismiss="modal">Add</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="editElement" tabindex="-1" role=form aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit your element</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="input"><strong>Change your summary:</strong></label>
+              <input type="text" class="form-control" id="input_r" placeholder="What you want to say:">
+              <label for="file">Change file:</label>
+              <input type="file" class="form-control-file" id="file_r">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+            <a type="button" class="btn btn-primary" data-dismiss="modal">Update</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="deleteElement" tabindex="-1" role=form aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Delete your element</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span>Do you want to delete your element permanently?</span>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal">Yes</a>
+            <a type="button" class="btn btn-primary" data-dismiss="modal">No</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
