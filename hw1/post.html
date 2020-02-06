@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <title></title>
+  </head>
+  <body>
+    <!-- PUT YOUR WORK HERE HERE! -->
+    <!-- navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">WebLife</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Profile <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Post</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--post-->
+    <ul class = "list-group list-group-flush">
+      <li class="list-group-item border-bottom-0 d-flex">
+        <a href="#" role="button" class ="ml-auto" data-toggle="modal" data-target="#newPost">
+          <i class="fas fa-plus-circle"></i>
+        </a>
+      </li>
+      <li class="list-group-item border-bottom-0 d-flex">
+        <a href="birthday.html" class="mr-auto"> It is My Birthday</a>
+        <a href="#" class="mr-4" data-toggle="modal" data-target="#editPost">
+          <i class="fas fa-cogs icons"></i>
+        </a>
+        <a href="#" class="mr-4" data-toggle="modal" data-target="#deletePost">
+          <i class="fas fa-trash icons"></i>
+        </a>
+      </li>
+      <li class="list-group-item border-bottom-0 d-flex">
+        <a href="#mypost" class="mr-auto"> A post of my day</a>
+        <a href="#" class="mr-4" data-toggle="modal" data-target="#editPost">
+          <i class="fas fa-cogs icons"></i>
+        </a>
+        <a href="#" class="mr-4" data-toggle="modal" data-target="#deletePost">
+          <i class="fas fa-trash icons"></i>
+        </a>
+      </li>
+      <li class="list-group-item border-bottom-0 d-flex">
+        <a href="#mypost" class="mr-auto"> Hello, WebLife!</a>
+        <a href="#" class="mr-4" data-toggle="modal" data-target="#editPost">
+          <i class="fas fa-cogs icons"></i>
+        </a>
+        <a href="#" class="mr-4" data-toggle="modal" data-target="#deletePost">
+          <i class="fas fa-trash icons"></i>
+        </a>
+      </li>
+    </ul>
+
+    <!--Modal-->
+    <div class="modal fade" id="newPost" tabindex="-1" role=form aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">New post</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="summary"><strong>Summary</strong></label>
+              <input type="text" class="form-control" id="summary" placeholder="What you want to say:">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+            <a type="button" class="btn btn-primary" data-dismiss="modal">Post</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="editPost" tabindex="-1" role=form aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit your post</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="newSummary"><strong>Summary</strong></label>
+              <input type="text" class="form-control" id="newSummary" placeholder="What you want to say:">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+            <a type="button" class="btn btn-primary" data-dismiss="modal">Update</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="deletePost" tabindex="-1" role=form aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Delete your post</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span>Do you want to delete your post permanently?</span>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn btn-secondary" data-dismiss="modal">Yes</a>
+            <a type="button" class="btn btn-primary" data-dismiss="modal">No</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
