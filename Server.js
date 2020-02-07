@@ -2,6 +2,10 @@ var express = require('express')
 var app = express()
 
 app.set('port', (process.env.PORT || 5000))
+app.use(express.static('hw1'))
+app.get('/', function(req, res) {
+   res.sendFile(__dirname + '/hw1/login.html');
+});
 
 //app.get('/', function(req, res) {
 //    res.sendFile(__dirname + '/index.html');
