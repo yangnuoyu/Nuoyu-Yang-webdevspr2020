@@ -3,7 +3,7 @@ var app = express()
 
 app.set('port', (process.env.PORT || 5000))
 
-app.use(express.static('/hw1'))
+app.use(express.static('hw1'))
 app.get('/', function(req, res) {
    res.sendFile(__dirname + '/hw1/index.html');
 });
