@@ -1,0 +1,25 @@
+{
+  "name": "nuoyu--yang-webdevspr2020-hw2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/lab": "^4.0.0-alpha.45",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "0.9.5",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.9.5",
+    "cross-fetch": "^3.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
